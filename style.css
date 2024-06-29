@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    text-decoration: none;
+}
+
+
+.section {
+    background-color: #fafafa;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section .items {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    gap: 2.2rem;
+
+}
+
+.section .items .item {
+    width: 100%;
+    min-width: 250px;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.section .items .item .image {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.section .items .item .image img {
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+}
+
+
+.section .items .item .card {
+    width: 100%;
+    padding: 1.3rem;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px #aaa;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.section .card .logo-link {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #111;
+    padding: 0.5rem 0rem;
+}
+
+.section .card .logo-link img {
+    height: 26px;
+    width: fit-content;
+    object-fit: cover;
+}
+
+.section .card .title {
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #000;
+    padding: 0.5rem 0rem;
+}
+
+.section .card .para {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #111;
+    padding: 0rem;
+}
+
+.section .card .para a {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    color: #276886;
+    padding: 0rem;
+}
+
+.section .card .items-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0rem;
+}
+
+.section .card .items-2 .col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.section .card .items-2 .col .label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    text-transform: capitalize;
+
+}
+
+.section .card .items-2 .col input {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    color: #000;
+    border: 1px solid #aaa;
+    padding: 0.8rem 0.4rem;
+    border-radius: 0.33rem;
+    background-color: #fff;
+    outline: none;
+    transition: all 1s;
+}
+
+.section .card .items-2 .col input:hover {
+    border: 1px solid transparent;
+    background-color: #f3f3f3;
+}
+
+.or {
+    padding: 0.5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.or-col {
+    width: 100%;
+    height: 1px;
+    background-color: #777;
+    opacity: 0.3;
+}
+
+.or-txt {
+    padding: 0rem 0.5rem;
+    font-size: 14px;
+    line-height: 14px;
+    color: #444;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    padding: 1.4rem 0rem;
+}
+
+.list .li {
+    width: 100%;
+    padding: 0.66rem 1rem;
+    border: 1px solid #aaa;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    transition: all 1s;
+}
+
+.list .li:hover {
+    border: 1px solid transparent;
+    background-color: #eee;
+
+}
+
+.list .li span {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    color: #444;
+    transition: all 1s;
+
+}
+
+.list .li:hover span {
+    color: #000;
+}
+
+.list .li span img {
+    height: 18px;
+    object-fit: cover;
+}
+
+.tools {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+.tools .line {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.tools .line .col {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.tools .line .col label {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #444;
+}
+
+.tools .line .col input {
+    height: 14px;
+    color: #444;
+}
+
+.tools .forgot {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    color: #276886;
+    transition: all 1s;
+}
+
+.tools .forgot:hover {
+    text-decoration: underline;
+}
+
+.btn-form {
+    width: 100%;
+    outline: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 0.88rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 1s;
+    background-color: #276886;
+    margin-top: 1rem;
+
+}
+
+.btn-form:hover {
+    background-color: #0f3e53;
+    border: 1px solid #0f3e53;
+
+}
+.waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+}
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+  }
